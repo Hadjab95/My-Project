@@ -7,16 +7,17 @@ This project is a website for my own online store. I started a small business a 
 This project is developed using the Django web framework, renowned for its robustness, scalability, and adherence to the Model-View-Controller (MVC) architectural pattern. Django simplifies the development process by providing a high-level, Pythonic approach, incorporating features such as an ORM for database interactions, built-in authentication, and a templating engine for dynamic content rendering. Leveraging Django's comprehensive toolkit, our e-commerce platform will ensure a secure, efficient, and maintainable solution for online retail.
 
 # Table of Contents
-Installation Instructions
-Usage Instructions
-Features
-Core Features
-Admin and Management Features
-Security and User Trust Features
-Support
+* Features
+* Admin and Management Features
+* Advanced Features
+* Installation Instructions
+* Usage Instructions
+* Support
 
-Features
-Core Features
+
+
+# Features
+# Core Features
 1.User Accounts:User registration and login.User profiles with order history. Password reset functionality.
 
 2.Product Management:Add, edit, and delete products.Assign categories and tags to products. Manage product attributes (size, color, etc.).
@@ -34,9 +35,9 @@ Core Features
 # Admin and Management Features
 1. Admin Dashboard:Overview of sales, orders, and customer activity.Quick access to product and user management.
 
-2. Order Management:View, process, and fulfill orders.Generate order invoices and packing slips.
+2. Order Management:View, process, and fulfill orders. Generate order invoices and packing slips.
 
-3. Inventory Management:Track and manage stock levels.Receive notifications for low stock.
+3. Inventory Management:Track and manage stock levels. Receive notifications for low stock.
 
 
 # Advanced Feature:
@@ -48,6 +49,7 @@ Personalized AI Assistant:a highly intelligent AI assistant that understands use
 2.Clone the repository: git@github.com:Hadjab95/My-Project.git
 
 3.Navigate to the project directory: cd ecommerce. 
+
 4.Apply database migrations: python manage.py migrate
 
 6.Run the development server: python manage.py runserver
@@ -56,11 +58,9 @@ Personalized AI Assistant:a highly intelligent AI assistant that understands use
 
 You can create superuser using the command:python manage.py createsuperuser
 
-Follow the prompts to create a superuser.
+Follow the prompts to create a superuser then navigate to the following url:http://127.0.0.1:8000/admin/
 
-then navigate to the following url:http://127.0.0.1:8000/admin/
-
-after navigating that url you can login using the user you created
+after navigating to that url you can login using the user you created
 
 # Support
 For any inquiries or issues, please contact me at barrysoul1099@gmail.com
