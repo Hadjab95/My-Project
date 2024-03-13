@@ -46,7 +46,7 @@ Personalized AI Assistant:a highly intelligent AI assistant that understands use
 # Installation Instructions
 1.To set up the project locally, follow these steps:
 
-2.Clone the repository: git@github.com:Hadjab95/My-Project.git
+2.Clone the repository: https://github.com/Hadjab95/My-Project.git
 
 3.Navigate to the project directory: cd ecommerce. 
 
