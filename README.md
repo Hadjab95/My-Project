@@ -50,9 +50,9 @@ Personalized AI Assistant:a highly intelligent AI assistant that understands use
 
 3.Navigate to the project directory: cd ecommerce. 
 
-4.Apply database migrations: `python manage.py migrate
+4.Apply database migrations: `python manage.py migrate`
 
-6.Run the development server: `python manage.py runserver
+6.Run the development server: `python manage.py runserver`
 
 # Usage Instructions
 
