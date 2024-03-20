@@ -2,9 +2,6 @@ from django.shortcuts import render, redirect
 from .models import Product, Category
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
-from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm
-from django import forms
 from .forms import SignUpForm
 
 
@@ -52,21 +49,21 @@ def login_user(request):
             login(request, user)
 
             # Do some shopping cart stuff
-            current_user = Profile.objects.get(user__id=request.user.id)
+            # current_user = Profile.objects.get(user__id=request.user.id)
             # Get their saved cart from database
-            saved_cart = current_user.old_cart
+            # saved_cart = current_user.old_cart
             # Convert database string to python dictionary
-            if saved_cart:
-                # Convert to dictionary using JSON
-                converted_cart = json.loads(saved_cart)
-                # Add the loaded cart dictionary to our session
-                # Get the cart
-                cart = Cart(request)
-                # Loop thru the cart and add the items from the database
-                for key, value in converted_cart.items():
-                    cart.db_add(product=key, quantity=value)
+            # if saved_cart:
+            # Convert to dictionary using JSON
+            # converted_cart = json.loads(saved_cart)
+            # Add the loaded cart dictionary to our session
+            # Get the cart
+            # cart = Cart(request)
+            # Loop thru the cart and add the items from the database
+            # for key, value in converted_cart.items():
+            # cart.db_add(product=key, quantity=value)
 
-            messages.success(request, ("You Have Been Logged In!"))
+            messages.success(request, ("You are have been logged in!"))
             return redirect("home")
         else:
             messages.success(request, ("There was an error, please try again..."))
@@ -78,7 +75,9 @@ def login_user(request):
 
 def logout_user(request):
     logout(request)
-    messages.success(request, ("You have been logged out...Thanks for stopping by..."))
+    messages.success(
+        request, ("You have been logged out...thank you for stopping by...")
+    )
     return redirect("home")
 
 
@@ -93,10 +92,8 @@ def register_user(request):
             # log in user
             user = authenticate(username=username, password=password)
             login(request, user)
-            messages.success(
-                request, ("Username Created - Please Fill Out Your User Info Below...")
-            )
-            return redirect("update_info")
+            messages.success(request, ("You have registered successfully...Welcome!"))
+            return redirect("home")
         else:
             messages.success(
                 request,
