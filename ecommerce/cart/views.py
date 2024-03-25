@@ -69,5 +69,5 @@ def cart_update(request):
 
         response = JsonResponse({"qty": product_qty})
         # return redirect('cart_summary')
-        messages.success(request, ("Your Cart Has Been Updated..."))
+        messages.success(request, ("Your Cart has been Updated..."))
         return response
